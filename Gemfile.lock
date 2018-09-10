@@ -162,7 +162,7 @@ DEPENDENCIES
   pry
   puma (~> 3.7)
   rails (~> 5.1.6)
-  redis
+  redis (~> 4.0)
   rspec-rails
   shoulda-matchers
   simplecov
