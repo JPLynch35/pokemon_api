@@ -1,0 +1,17 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/connorosburn/personal_projects/games/free/pokemon_api/app/models/turn_info.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/connorosburn/personal_projects/games/free/pokemon_api/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1534945491
+  }
+}

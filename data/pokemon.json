@@ -1,0 +1,1328 @@
+{
+  "Bulbasaur":
+  {
+    "type_1": "grass",
+    "type_2": "poison",
+    "base_hp": 45,
+    "base_attack": 49,
+    "base_defense": 49,
+    "base_special": 65,
+    "base_speed": 45,
+    "moves":
+    {
+      "Tackle": 1,
+      "Growl": 1,
+      "Leech Seed": 7,
+      "Vine Whip": 13,
+      "PoisonPowder": 20,
+      "Razor Leaf": 27,
+      "Growth": 34,
+      "Sleep Powder": 41,
+      "SolarBeam": 48,
+      "Swords Dance": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mega Drain": "TM",
+      "SolarBeam": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Cut": "HM"
+    }
+  },
+  "Ivysaur":
+  {
+    "type_1": "grass",
+    "type_2": "poison",
+    "base_hp": 60,
+    "base_attack": 62,
+    "base_defense": 63,
+    "base_special": 80,
+    "base_speed": 60,
+    "moves":
+    {
+      "Tackle": 1,
+      "Growl": 1,
+      "Leech Seed": 1,
+      "Leech Seed": 7,
+      "Vine Whip": 13,
+      "PoisonPowder": 22,
+      "Razor Leaf": 30,
+      "Growth": 38,
+      "Sleep Powder": 46,
+      "SolarBeam": 54,
+      "Swords Dance": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mega Drain": "TM",
+      "SolarBeam": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Cut": "HM"
+    }
+  },
+  "Venusaur":
+  {
+    "type_1": "grass",
+    "type_2": "poison",
+    "base_hp": 80,
+    "base_attack": 82,
+    "base_defense": 83,
+    "base_special": 100,
+    "base_speed": 80,
+    "moves":
+    {
+      "Tackle": 1,
+      "Growl": 1,
+      "Leech Seed": 1,
+      "Vine Whip": 1,
+      "Leech Seed": 7,
+      "Vine Whip": 13,
+      "PoisonPowder": 22,
+      "Razor Leaf": 30,
+      "Growth": 43,
+      "Sleep Powder": 55,
+      "SolarBeam": 65,
+      "Swords Dance": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mega Drain": "TM",
+      "SolarBeam": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Cut": "HM"
+    }
+  },
+  "Charmander":
+  {
+    "type_1": "fire",
+    "type_2": null,
+    "base_hp": 39,
+    "base_attack": 52,
+    "base_defense": 43,
+    "base_special": 50,
+    "base_speed": 65,
+    "moves":
+    {
+      "Scratch": 1,
+      "Growl": 1,
+      "Ember": 9,
+      "Leer": 15,
+      "Rage": 22,
+      "Slash": 30,
+      "Flamethrower": 38,
+      "Fire Spin": 46,
+      "Mega Punch": "TM",
+      "Swords Dance": "TM",
+      "Mega Kick": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Submission": "TM",
+      "Counter": "TM",
+      "Seismic Toss": "TM",
+      "Rage": "TM",
+      "Dragon Rage": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Fire Blast": "TM",
+      "Swift": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Cut": "HM",
+      "Strength": "HM"
+    }
+  },
+  "Charmeleon":
+  {
+    "type_1": "fire",
+    "type_2": null,
+    "base_hp": 58,
+    "base_attack": 64,
+    "base_defense": 58,
+    "base_special": 65,
+    "base_speed": 80,
+    "moves":
+    {
+      "Scratch": 1,
+      "Growl": 1,
+      "Ember": 1,
+      "Ember": 9,
+      "Leer": 15,
+      "Rage": 24,
+      "Slash": 33,
+      "Flamethrower": 42,
+      "Fire Spin": 56,
+      "Mega Punch": "TM",
+      "Swords Dance": "TM",
+      "Mega Kick": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Submission": "TM",
+      "Counter": "TM",
+      "Seismic Toss": "TM",
+      "Rage": "TM",
+      "Dragon Rage": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Fire Blast": "TM",
+      "Swift": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Cut": "HM",
+      "Strength": "HM"
+    }
+  },
+  "Charizard":
+  {
+    "type_1": "fire",
+    "type_2": "flying",
+    "base_hp": 78,
+    "base_attack": 84,
+    "base_defense": 78,
+    "base_special": 85,
+    "base_speed": 100,
+    "moves":
+    {
+      "Scratch": 1,
+      "Growl": 1,
+      "Ember": 1,
+      "Leer": 1,
+      "Ember": 9,
+      "Leer": 15,
+      "Rage": 24,
+      "Slash": 36,
+      "Flamethrower": 46,
+      "Fire Spin": 55,
+      "Mega Punch": "TM",
+      "Swords Dance": "TM",
+      "Mega Kick": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Submission": "TM",
+      "Counter": "TM",
+      "Seismic Toss": "TM",
+      "Rage": "TM",
+      "Dragon Rage": "TM",
+      "Earthquake": "TM",
+      "Fissure": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Fire Blast": "TM",
+      "Swift": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Cut": "HM",
+      "Fly": "HM",
+      "Strength": "HM"
+    }
+  },
+  "Squirtle":
+  {
+    "type_1": "water",
+    "type_2": null,
+    "base_hp": 44,
+    "base_attack": 48,
+    "base_defense": 65,
+    "base_special": 50,
+    "base_speed": 43,
+    "moves":
+    {
+      "Tackle": 1,
+      "Tail Whip": 1,
+      "Bubble": 8,
+      "Water Gun": 15,
+      "Bite": 22,
+      "Withdraw": 28,
+      "Skull Bash": 35,
+      "Hydro Pump": 42,
+      "Mega Punch": "TM",
+      "Mega Kick": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "BubbleBeam": "TM",
+      "Water Gun": "TM",
+      "Ice Beam": "TM",
+      "Blizzard": "TM",
+      "Submission": "TM",
+      "Counter": "TM",
+      "Seismic Toss": "TM",
+      "Rage": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Surf": "HM",
+      "Strength": "HM"
+    }
+  },
+  "Wartortle":
+  {
+    "type_1": "water",
+    "type_2": null,
+    "base_hp": 59,
+    "base_attack": 63,
+    "base_defense": 80,
+    "base_special": 65,
+    "base_speed": 58,
+    "moves":
+    {
+      "Tackle": 1,
+      "Tail Whip": 1,
+      "Bubble": 1,
+      "Bubble": 8,
+      "Water Gun": 15,
+      "Bite": 24,
+      "Withdraw": 31,
+      "Skull Bash": 39,
+      "Hydro Pump": 47,
+      "Mega Punch": "TM",
+      "Mega Kick": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "BubbleBeam": "TM",
+      "Water Gun": "TM",
+      "Ice Beam": "TM",
+      "Blizzard": "TM",
+      "Submission": "TM",
+      "Counter": "TM",
+      "Seismic Toss": "TM",
+      "Rage": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Surf": "HM",
+      "Strength": "HM"
+    }
+  },
+  "Blastoise":
+  {
+    "type_1": "water",
+    "type_2": null,
+    "base_hp": 79,
+    "base_attack": 83,
+    "base_defense": 100,
+    "base_special": 85,
+    "base_speed": 78,
+    "moves":
+    {
+      "Tackle": 1,
+      "Tail Whip": 1,
+      "Bubble": 1,
+      "Water Gun": 1,
+      "Bubble": 8,
+      "Water Gun": 15,
+      "Bite": 24,
+      "Withdraw": 31,
+      "Skull Bash": 42,
+      "Hydro Pump": 52,
+      "Mega Punch": "TM",
+      "Mega Kick": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "BubbleBeam": "TM",
+      "Water Gun": "TM",
+      "Ice Beam": "TM",
+      "Blizzard": "TM",
+      "Hyper Beam": "TM",
+      "Submission": "TM",
+      "Counter": "TM",
+      "Seismic Toss": "TM",
+      "Rage": "TM",
+      "Earthquake": "TM",
+      "Fissure": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Surf": "HM",
+      "Strength": "HM"
+    }
+  },
+  "Caterpie":
+  {
+    "type_1": "bug",
+    "type_2": null,
+    "base_hp": 45,
+    "base_attack": 30,
+    "base_defense": 35,
+    "base_special": 20,
+    "base_speed": 45
+  },
+  "Metapod":
+  {
+    "type_1": "bug",
+    "type_2": null,
+    "base_hp": 50,
+    "base_attack": 20,
+    "base_defense": 55,
+    "base_special": 25,
+    "base_speed": 30
+  },
+  "Butterfree":
+  {
+    "type_1": "bug",
+    "type_2": "flying",
+    "base_hp": 60,
+    "base_attack": 45,
+    "base_defense": 50,
+    "base_special": 80,
+    "base_speed": 70
+  },
+  "Weedle":
+  {
+    "type_1": "bug",
+    "type_2": "poison",
+    "base_hp": 40,
+    "base_attack": 35,
+    "base_defense": 30,
+    "base_special": 20,
+    "base_speed": 50
+  },
+  "Kakuna":
+  {
+    "type_1": "bug",
+    "type_2": "poison",
+    "base_hp": 45,
+    "base_attack": 25,
+    "base_defense": 50,
+    "base_special": 25,
+    "base_speed": 35
+  },
+  "Beedrill":
+  {
+    "type_1": "bug",
+    "type_2": "poison",
+    "base_hp": 65,
+    "base_attack": 80,
+    "base_defense": 40,
+    "base_special": 45,
+    "base_speed": 75
+  },
+  "Pidgey":
+  {
+    "type_1": "normal",
+    "type_2": "flying",
+    "base_hp": 40,
+    "base_attack": 45,
+    "base_defense": 40,
+    "base_special": 35,
+    "base_speed": 56
+  },
+  "Pidgeotto":
+  {
+    "type_1": "normal",
+    "type_2": "flying",
+    "base_hp": 63,
+    "base_attack": 60,
+    "base_defense": 55,
+    "base_special": 50,
+    "base_speed": 71
+  },
+  "Pidgeot":
+  {
+    "type_1": "normal",
+    "type_2": "flying",
+    "base_hp": 83,
+    "base_attack": 80,
+    "base_defense": 75,
+    "base_special": 70,
+    "base_speed": 91
+  },
+  "Rattata":
+  {
+    "type_1": "normal",
+    "type_2": null,
+    "base_hp": 30,
+    "base_attack": 56,
+    "base_defense": 35,
+    "base_special": 25,
+    "base_speed": 72
+  },
+  "Raticate":
+  {
+    "type_1": "normal",
+    "type_2": null,
+    "base_hp": 55,
+    "base_attack": 81,
+    "base_defense": 60,
+    "base_special": 50,
+    "base_speed": 97
+  },
+  "Spearow":
+  {
+    "type_1": "normal",
+    "type_2": "flying",
+    "base_hp": 40,
+    "base_attack": 60,
+    "base_defense": 30,
+    "base_special": 31,
+    "base_speed": 70
+  },
+  "Fearow":
+  {
+    "type_1": "normal",
+    "type_2": "flying",
+    "base_hp": 65,
+    "base_attack": 90,
+    "base_defense": 65,
+    "base_special": 61,
+    "base_speed": 100
+  },
+  "Ekans":
+  {
+    "type_1": "poison",
+    "type_2": null,
+    "base_hp": 35,
+    "base_attack": 60,
+    "base_defense": 44,
+    "base_special": 40,
+    "base_speed": 55
+  },
+  "Arbok":
+  {
+    "type_1": "poison",
+    "type_2": null,
+    "base_hp": 60,
+    "base_attack": 85,
+    "base_defense": 69,
+    "base_special": 65,
+    "base_speed": 80
+  },
+  "Pikachu":
+  {
+    "type_1": "electric",
+    "type_2": null,
+    "base_hp": 35,
+    "base_attack": 55,
+    "base_defense": 30,
+    "base_special": 50,
+    "base_speed": 90
+  },
+  "Raichu":
+  {
+    "type_1": "electric",
+    "type_2": null,
+    "base_hp": 60,
+    "base_attack": 90,
+    "base_defense": 55,
+    "base_special": 90,
+    "base_speed": 100
+  },
+  "Sandshrew":
+  {
+    "type_1": "ground",
+    "type_2": null,
+    "base_hp": 50,
+    "base_attack": 75,
+    "base_defense": 85,
+    "base_special": 30,
+    "base_speed": 40
+  },
+  "Sandslash":
+  {
+    "type_1": "ground",
+    "type_2": null,
+    "base_hp": 75,
+    "base_attack": 100,
+    "base_defense": 110,
+    "base_special": 55,
+    "base_speed": 65
+  },
+  "NidoranF":
+  {
+    "type_1": "poison",
+    "type_2": null,
+    "base_hp": 55,
+    "base_attack": 47,
+    "base_defense": 52,
+    "base_special": 40,
+    "base_speed": 41
+  },
+  "Nidorina":
+  {
+    "type_1": "poison",
+    "type_2": null,
+    "base_hp": 70,
+    "base_attack": 62,
+    "base_defense": 67,
+    "base_special": 55,
+    "base_speed": 56
+  },
+  "Nidoqueen":
+  {
+    "type_1": "poison",
+    "type_2": "ground",
+    "base_hp": 90,
+    "base_attack": 82,
+    "base_defense": 87,
+    "base_special": 75,
+    "base_speed": 76
+  },
+  "NidoranM":
+  {
+    "type_1": "poison",
+    "type_2":  null,
+    "base_hp": 46,
+    "base_attack": 57,
+    "base_defense": 40,
+    "base_special": 40,
+    "base_speed": 50
+  },
+  "Nidorino":
+  {
+    "type_1": "poison",
+    "type_2":  null,
+    "base_hp": 61,
+    "base_attack": 72,
+    "base_defense": 57,
+    "base_special": 55,
+    "base_speed": 65
+  },
+  "Nidoking":
+  {
+    "type_1": "poison",
+    "type_2":  "ground",
+    "base_hp": 81,
+    "base_attack": 91,
+    "base_defense": 77,
+    "base_special": 75,
+    "base_speed": 85
+  },
+  "Clefairy":
+  {
+    "type_1": "normal",
+    "type_2":  null,
+    "base_hp": 70,
+    "base_attack": 45,
+    "base_defense": 48,
+    "base_special": 60,
+    "base_speed": 35
+  },
+  "Clefable":
+  {
+    "type_1": "normal",
+    "type_2":  null,
+    "base_hp": 95,
+    "base_attack": 70,
+    "base_defense": 73,
+    "base_special": 85,
+    "base_speed": 60
+  },
+  "Vulpix":
+  {
+    "type_1": "fire",
+    "type_2":  null,
+    "base_hp": 38,
+    "base_attack": 41,
+    "base_defense": 40,
+    "base_special": 85,
+    "base_speed": 65
+  },
+  "Ninetales":
+  {
+    "type_1": "fire",
+    "type_2":  null,
+    "base_hp": 73,
+    "base_attack": 76,
+    "base_defense": 75,
+    "base_special": 100,
+    "base_speed": 100
+  },
+  "Jigglypuff":
+  {
+    "type_1": "normal",
+    "type_2":  null,
+    "base_hp": 115,
+    "base_attack": 45,
+    "base_defense": 20,
+    "base_special": 25,
+    "base_speed": 20
+  },
+  "Wigglytuff":
+  {
+    "type_1": "normal",
+    "type_2":  null,
+    "base_hp": 140,
+    "base_attack": 70,
+    "base_defense": 45,
+    "base_special": 50,
+    "base_speed": 45
+  },
+  "Zubat":
+  {
+    "type_1": "poison",
+    "type_2":  "flying",
+    "base_hp": 40,
+    "base_attack": 45,
+    "base_defense": 35,
+    "base_special": 40,
+    "base_speed": 55
+  },
+  "Golbat":
+  {
+    "type_1": "poison",
+    "type_2":  "flying",
+    "base_hp": 75,
+    "base_attack": 80,
+    "base_defense": 70,
+    "base_special": 75,
+    "base_speed": 90
+  },
+  "Oddish":
+  {
+    "type_1": "grass",
+    "type_2":  "poison",
+    "base_hp": 45,
+    "base_attack": 50,
+    "base_defense": 55,
+    "base_special": 75,
+    "base_speed": 30
+  },
+  "Gloom":
+  {
+    "type_1": "grass",
+    "type_2":  "poison",
+    "base_hp": 60,
+    "base_attack": 65,
+    "base_defense": 70,
+    "base_special": 85,
+    "base_speed": 40
+  },
+  "Vileplume":
+  {
+    "type_1": "grass",
+    "type_2":  "poison",
+    "base_hp": 75,
+    "base_attack": 80,
+    "base_defense": 85,
+    "base_special": 100,
+    "base_speed": 50
+  },
+  "Paras":
+  {
+    "type_1": "bug",
+    "type_2":  "grass",
+    "base_hp": 35,
+    "base_attack": 70,
+    "base_defense": 55,
+    "base_special": 55,
+    "base_speed": 25
+  },
+  "Parasect":
+  {
+    "type_1": "bug",
+    "type_2":  "grass",
+    "base_hp": 60,
+    "base_attack": 95,
+    "base_defense": 80,
+    "base_special": 80,
+    "base_speed": 30
+  },
+  "Venonat":
+  {
+    "type_1": "bug",
+    "type_2":  "poison",
+    "base_hp": 60,
+    "base_attack": 55,
+    "base_defense": 50,
+    "base_special": 40,
+    "base_speed": 45
+  },
+  "Venomoth":
+  {
+    "type_1": "bug",
+    "type_2":  "poison",
+    "base_hp": 70,
+    "base_attack": 65,
+    "base_defense": 60,
+    "base_special": 90,
+    "base_speed": 90
+  },
+  "Diglett":
+  {
+    "type_1": "ground",
+    "type_2":  null,
+    "base_hp": 10,
+    "base_attack": 55,
+    "base_defense": 25,
+    "base_special": 45,
+    "base_speed": 95
+  },
+  "Dugtrio":
+  {
+    "type_1": "ground",
+    "type_2":  null,
+    "base_hp": 35,
+    "base_attack": 100,
+    "base_defense": 50,
+    "base_special": 70,
+    "base_speed": 120
+  },
+  "Meowth":
+  {
+    "type_1": "normal",
+    "type_2":  null,
+    "base_hp": 40,
+    "base_attack": 45,
+    "base_defense": 35,
+    "base_special": 40,
+    "base_speed": 90
+  },
+  "Persian":
+  {
+    "type_1": "normal",
+    "type_2":  null,
+    "base_hp": 65,
+    "base_attack": 70,
+    "base_defense": 60,
+    "base_special": 65,
+    "base_speed": 115
+  },
+  "Psyduck":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 50,
+    "base_attack": 52,
+    "base_defense": 48,
+    "base_special": 50,
+    "base_speed": 55
+  },
+  "Golduck":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 80,
+    "base_attack": 82,
+    "base_defense": 78,
+    "base_special": 80,
+    "base_speed": 85
+  },
+  "Mankey":
+  {
+    "type_1": "fighting",
+    "type_2":  null,
+    "base_hp": 40,
+    "base_attack": 80,
+    "base_defense": 35,
+    "base_special": 35,
+    "base_speed": 70
+  },
+  "Primape":
+  {
+    "type_1": "fighting",
+    "type_2":  null,
+    "base_hp": 65,
+    "base_attack": 105,
+    "base_defense": 60,
+    "base_special": 60,
+    "base_speed": 95
+  },
+  "Growlithe":
+  {
+    "type_1": "fire",
+    "type_2":  null,
+    "base_hp": 55,
+    "base_attack": 70,
+    "base_defense": 45,
+    "base_special": 50,
+    "base_speed": 60
+  },
+  "Arcanine":
+  {
+    "type_1": "fire",
+    "type_2":  null,
+    "base_hp": 90,
+    "base_attack": 110,
+    "base_defense": 80,
+    "base_special": 80,
+    "base_speed": 95
+  },
+  "Poliwag":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 40,
+    "base_attack": 50,
+    "base_defense": 40,
+    "base_special": 40,
+    "base_speed": 90
+  },
+  "Poliwhirl":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 65,
+    "base_attack": 65,
+    "base_defense": 65,
+    "base_special": 50,
+    "base_speed": 90
+  },
+  "Poliwrath":
+  {
+    "type_1": "water",
+    "type_2":  "fighting",
+    "base_hp": 90,
+    "base_attack": 95,
+    "base_defense": 95,
+    "base_special": 70,
+    "base_speed": 70
+  },
+  "Abra":
+  {
+    "type_1": "psychic",
+    "type_2":  null,
+    "base_hp": 25,
+    "base_attack": 20,
+    "base_defense": 15,
+    "base_special": 105,
+    "base_speed": 90
+  },
+  "Kadabra":
+  {
+    "type_1": "psychic",
+    "type_2":  null,
+    "base_hp": 40,
+    "base_attack": 35,
+    "base_defense": 30,
+    "base_special": 120,
+    "base_speed": 105
+  },
+  "Alakazam":
+  {
+    "type_1": "psychic",
+    "type_2":  null,
+    "base_hp": 55,
+    "base_attack": 50,
+    "base_defense": 45,
+    "base_special": 135,
+    "base_speed": 120
+  },
+  "Machop":
+  {
+    "type_1": "fighting",
+    "type_2":  null,
+    "base_hp": 70,
+    "base_attack": 80,
+    "base_defense": 50,
+    "base_special": 35,
+    "base_speed": 35
+  },
+  "Machoke":
+  {
+    "type_1": "fighting",
+    "type_2":  null,
+    "base_hp": 80,
+    "base_attack": 100,
+    "base_defense": 70,
+    "base_special": 50,
+    "base_speed": 45
+  },
+  "Machamp":
+  {
+    "type_1": "fighting",
+    "type_2":  null,
+    "base_hp": 90,
+    "base_attack": 130,
+    "base_defense": 80,
+    "base_special": 65,
+    "base_speed": 55
+  },
+  "Bellsprout":
+  {
+    "type_1": "grass",
+    "type_2":  "poison",
+    "base_hp": 50,
+    "base_attack": 75,
+    "base_defense": 35,
+    "base_special": 70,
+    "base_speed": 40
+  },
+  "Weepinbell":
+  {
+    "type_1": "grass",
+    "type_2":  "poison",
+    "base_hp": 65,
+    "base_attack": 90,
+    "base_defense": 50,
+    "base_special": 85,
+    "base_speed": 55
+  },
+  "Victreebel":
+  {
+    "type_1": "grass",
+    "type_2":  "poison",
+    "base_hp": 80,
+    "base_attack": 105,
+    "base_defense": 65,
+    "base_special": 100,
+    "base_speed": 70
+  },
+  "Tentacool":
+  {
+    "type_1": "water",
+    "type_2":  "poison",
+    "base_hp": 40,
+    "base_attack": 40,
+    "base_defense": 35,
+    "base_special": 100,
+    "base_speed": 70
+  },
+  "Tentacruel":
+  {
+    "type_1": "water",
+    "type_2":  "poison",
+    "base_hp": 80,
+    "base_attack": 70,
+    "base_defense": 65,
+    "base_special": 120,
+    "base_speed": 100
+  },
+  "Geodude":
+  {
+    "type_1": "rock",
+    "type_2":  "ground",
+    "base_hp": 40,
+    "base_attack": 80,
+    "base_defense": 100,
+    "base_special": 30,
+    "base_speed": 20
+  },
+  "Graveler":
+  {
+    "type_1": "rock",
+    "type_2":  "ground",
+    "base_hp": 55,
+    "base_attack": 95,
+    "base_defense": 115,
+    "base_special": 30,
+    "base_speed": 45
+  },
+  "Golem":
+  {
+    "type_1": "rock",
+    "type_2":  "ground",
+    "base_hp": 80,
+    "base_attack": 110,
+    "base_defense": 130,
+    "base_special": 55,
+    "base_speed": 45
+  },
+  "Ponyta":
+  {
+    "type_1": "fire",
+    "type_2":  null,
+    "base_hp": 50,
+    "base_attack": 85,
+    "base_defense": 55,
+    "base_special": 65,
+    "base_speed": 90
+  },
+  "Rapidash":
+  {
+    "type_1": "fire",
+    "type_2":  null,
+    "base_hp": 65,
+    "base_attack": 100,
+    "base_defense": 70,
+    "base_special": 80,
+    "base_speed": 105
+  },
+  "Slowpoke":
+  {
+    "type_1": "water",
+    "type_2":  "psychic",
+    "base_hp": 90,
+    "base_attack": 65,
+    "base_defense": 65,
+    "base_special": 40,
+    "base_speed": 15
+  },
+  "Slowbro":
+  {
+    "type_1": "water",
+    "type_2":  "psychic",
+    "base_hp": 95,
+    "base_attack": 75,
+    "base_defense": 110,
+    "base_special": 80,
+    "base_speed": 30
+  },
+  "Magnemite":
+  {
+    "type_1": "electric",
+    "type_2":  null,
+    "base_hp": 25,
+    "base_attack": 35,
+    "base_defense": 70,
+    "base_special": 95,
+    "base_speed": 45
+  },
+  "Magneton":
+  {
+    "type_1": "electric",
+    "type_2":  null,
+    "base_hp": 50,
+    "base_attack": 60,
+    "base_defense": 95,
+    "base_special": 120,
+    "base_speed": 70
+  },
+  "Farfetch'd":
+  {
+    "type_1": "normal",
+    "type_2":  "flying",
+    "base_hp": 52,
+    "base_attack": 65,
+    "base_defense": 55,
+    "base_special": 58,
+    "base_speed": 60
+  },
+  "Doduo":
+  {
+    "type_1": "normal",
+    "type_2":  "flying",
+    "base_hp": 35,
+    "base_attack": 85,
+    "base_defense": 45,
+    "base_special": 35,
+    "base_speed": 75
+  },
+  "Dodrio":
+  {
+    "type_1": "normal",
+    "type_2":  "flying",
+    "base_hp": 60,
+    "base_attack": 110,
+    "base_defense": 70,
+    "base_special": 60,
+    "base_speed": 100
+  },
+  "Seel":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 65,
+    "base_attack": 45,
+    "base_defense": 66,
+    "base_special": 70,
+    "base_speed": 45
+  },
+  "Dewgong":
+  {
+    "type_1": "water",
+    "type_2":  "ice",
+    "base_hp": 90,
+    "base_attack": 70,
+    "base_defense": 80,
+    "base_special": 95,
+    "base_speed": 70
+  },
+  "Grimer":
+  {
+    "type_1": "poison",
+    "type_2":  null,
+    "base_hp": 80,
+    "base_attack": 80,
+    "base_defense": 50,
+    "base_special": 40,
+    "base_speed": 25
+  },
+  "Muk":
+  {
+    "type_1": "poison",
+    "type_2":  null,
+    "base_hp": 105,
+    "base_attack": 105,
+    "base_defense": 75,
+    "base_special": 65,
+    "base_speed": 50
+  },
+  "Shellder":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 30,
+    "base_attack": 65,
+    "base_defense": 100,
+    "base_special": 45,
+    "base_speed": 40
+  },
+  "Cloyster":
+  {
+    "type_1": "water",
+    "type_2":  "ice",
+    "base_hp": 50,
+    "base_attack": 95,
+    "base_defense": 180,
+    "base_special": 85,
+    "base_speed": 70
+  },
+  "Gastly":
+  {
+    "type_1": "ghost",
+    "type_2":  "poison",
+    "base_hp": 30,
+    "base_attack": 35,
+    "base_defense": 30,
+    "base_special": 100,
+    "base_speed": 80
+  },
+  "Haunter":
+  {
+    "type_1": "ghost",
+    "type_2":  "poison",
+    "base_hp": 45,
+    "base_attack": 50,
+    "base_defense": 45,
+    "base_special": 115,
+    "base_speed": 95
+  },
+  "Gengar":
+  {
+    "type_1": "ghost",
+    "type_2":  "poison",
+    "base_hp": 60,
+    "base_attack": 65,
+    "base_defense": 60,
+    "base_special": 130,
+    "base_speed": 110
+  },
+  "Onix":
+  {
+    "type_1": "rock",
+    "type_2":  "ground",
+    "base_hp": 35,
+    "base_attack": 45,
+    "base_defense": 160,
+    "base_special": 30,
+    "base_speed": 70
+  },
+  "Drowzee":
+  {
+    "type_1": "psychic",
+    "type_2":  null,
+    "base_hp": 60,
+    "base_attack": 48,
+    "base_defense": 45,
+    "base_special": 90,
+    "base_speed": 42
+  },
+  "Hypno":
+  {
+    "type_1": "psychic",
+    "type_2":  null,
+    "base_hp": 85,
+    "base_attack": 73,
+    "base_defense": 70,
+    "base_special": 115,
+    "base_speed": 67
+  },
+  "Krabby":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 30,
+    "base_attack": 105,
+    "base_defense": 90,
+    "base_special": 25,
+    "base_speed": 50
+  },
+  "Kingler":
+  {
+    "type_1": "water",
+    "type_2":  null,
+    "base_hp": 55,
+    "base_attack": 130,
+    "base_defense": 115,
+    "base_special": 50,
+    "base_speed": 75
+  },
+  "Voltorb":
+  {
+    "type_1": "electric",
+    "type_2":  null,
+    "base_hp": 40,
+    "base_attack": 30,
+    "base_defense": 50,
+    "base_special": 55,
+    "base_speed": 100
+  },
+  "Electrode":
+  {
+    "type_1": "electric",
+    "type_2":  null,
+    "base_hp": 60,
+    "base_attack": 50,
+    "base_defense": 70,
+    "base_special": 80,
+    "base_speed": 140
+  },
+  "Exeggcute":
+  {
+    "type_1": "grass",
+    "type_2":  "psychic",
+    "base_hp": 60,
+    "base_attack": 40,
+    "base_defense": 80,
+    "base_special": 60,
+    "base_speed": 40
+  }
+}

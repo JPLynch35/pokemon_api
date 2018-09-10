@@ -1,0 +1,8 @@
+{
+  "Pound":
+  {
+    "pp": 35,
+    "accuracy": 100,
+    "actions": [{"attack_move": {"power": 40}}]
+  }
+}
