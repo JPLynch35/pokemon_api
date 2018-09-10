@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: ENV["REDIS_URL"]
+  url: redis://h:pf5367ded65ae3df715cd29909a9594a76bbbfdd49e184a81aa7ff11a85483a46@ec2-52-20-36-181.compute-1.amazonaws.com:17049
   channel_prefix: pokemon_api_production
