@@ -60,7 +60,7 @@ class PlayerChannel < ApplicationCable::Channel
       end
     end
     ActionCable.server.broadcast "player_#{send_to}", {
-      message: "Message from your opponent: " + data["message"]
+      opponent_message: data["message"]
     }
   end
 
