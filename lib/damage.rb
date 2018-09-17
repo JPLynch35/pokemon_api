@@ -2,22 +2,25 @@ require './lib/damage_values'
 require 'pry'
 
 module Damage
-  def damage(attacker, defender, move)
-    damage_values = DamageValues.new(attacker.level, move.power)
+  def damage(attacker, defender, power, move)
+    damage_values = DamageValues.new(attacker.active_pokemon.level, power)
     physical_special(damage_values, attacker, defender, move)
     modifier(damage_values, attacker, defender, move)
-    damage_values.level *= 2 if critical?(attacker)
+    if critical?(attacker)
+      damage_values.level *= 2
+      @events.push({defender => "critical"})
+    end
     damage_calculation(damage_values)
   end
 
   def critical?(attacker)
-    threshold = attacker.speed_values.base / 2
+    threshold = attacker.active_pokemon.speed_values.base / 2
     random = rand(256)
     return random <= threshold
   end
 
   def stab(attacker, move)
-    if attacker.type_1 == move.type || attacker.type_2 == move.type
+    if attacker.active_pokemon.type_1 == move.type || attacker.active_pokemon.type_2 == move.type
       return 1.5
     else
       return 1
@@ -51,18 +54,21 @@ module Damage
 
   def modifier(damage_values, attacker, defender, move)
     damage_values.modifier *= stab(attacker, move)
-    damage_values.modifier *= type_chart(move.type, defender.type_1)
-    damage_values.modifier *= type_chart(move.type, defender.type_2) unless defender.type_2.nil?
+    type_modifier = type_chart(move.type, defender.active_pokemon.type_1)
+    type_modifier *= type_chart(move.type, defender.active_pokemon.type_2) unless defender.active_pokemon.type_2.nil?
+    @events.push(attacker => "super_effective") if type_modifier > 1.0
+    @events.push(attacker => "not_very_effective") if type_modifier < 1.0
+    damage_values.modifier *= type_modifier
   end
 
   def physical_special(damage_values, attacker, defender, move)
     special_types = [:water, :grass, :fire, :ice, :electric, :psychic, :dragon]
     if special_types.include?(move.type)
-      damage_values.attack = attacker.special
-      damage_values.defense = defender.special
+      damage_values.attack = attacker.active_pokemon.special
+      damage_values.defense = defender.active_pokemon.special
     else
-      damage_values.attack = attacker.attack
-      damage_values.defense = defender.defense
+      damage_values.attack = attacker.active_pokemon.attack
+      damage_values.defense = defender.active_pokemon.defense
     end
   end
 

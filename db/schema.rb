@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180929012600) do
+ActiveRecord::Schema.define(version: 20180929012601) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,12 +24,18 @@ ActiveRecord::Schema.define(version: 20180929012600) do
   create_table "games", force: :cascade do |t|
     t.string "player_one_uuid"
     t.string "player_two_uuid"
+    t.bigint "roster_one_base_id"
+    t.bigint "roster_two_base_id"
     t.string "token"
+    t.integer "current_state", default: 0
+    t.index ["roster_one_base_id"], name: "index_games_on_roster_one_base_id"
+    t.index ["roster_two_base_id"], name: "index_games_on_roster_two_base_id"
     t.index ["token"], name: "index_games_on_token", unique: true
   end
 
   create_table "pokemon_bases", force: :cascade do |t|
     t.string "species_name"
+    t.integer "level"
     t.integer "hp_iv"
     t.integer "hp_ev"
     t.integer "attack_iv"
@@ -59,5 +65,7 @@ ActiveRecord::Schema.define(version: 20180929012600) do
   end
 
   add_foreign_key "game_states", "games"
+  add_foreign_key "games", "roster_bases", column: "roster_one_base_id"
+  add_foreign_key "games", "roster_bases", column: "roster_two_base_id"
   add_foreign_key "pokemon_bases", "roster_bases", column: "roster_base_id"
 end

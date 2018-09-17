@@ -11,6 +11,7 @@ class RosterAdd
     roster_params = {"team" => {}}
     @roster_data[:data]["roster"].each do |name, moves|
       roster_params["team"][name] = {}
+      roster_params["team"][name]["species_name"] = name
       roster_params["team"][name]["move_one"] = moves["moves"][0]
       roster_params["team"][name]["move_two"] = moves["moves"][1]
       roster_params["team"][name]["move_three"] = moves["moves"][2]
@@ -27,18 +28,30 @@ class RosterAdd
       roster_params["team"][name]["special_ev"] = 65535
       roster_params["team"][name]["speed_ev"] = 65535
     end
-    roster_params["active_pokemon"] = @roster_data[:data]["roster"].keys.first
     roster_params
   end
 
   def store_roster(roster)
-    state = JSON.parse(@game.game_states.last.data)
-    state[@roster_data[:roster]] = roster
-    @game.game_states.create(data: state.to_json)
+    roster_base = RosterBase.create
+    params = {}
+    roster["team"].each do |name, data|
+      roster_base.pokemon_bases.create(data)
+    end
+    if @roster_data[:roster] == "roster_one"
+      @game.roster_one_base = roster_base
+      @base = @game.roster_one_base
+    elsif @roster_data[:roster] == "roster_two"
+      @game.roster_two_base = roster_base
+      @base = @game.roster_two_base
+    end
   end
 
   def add
     roster = generate_roster
     store_roster(roster)
+  end
+
+  def starting_roster
+    Roster.from_data(@base)
   end
 end

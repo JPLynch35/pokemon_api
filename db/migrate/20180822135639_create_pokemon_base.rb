@@ -2,6 +2,7 @@ class CreatePokemonBase < ActiveRecord::Migration[5.1]
   def change
     create_table :pokemon_bases do |t|
       t.string :species_name
+      t.integer :level
       t.integer :hp_iv
       t.integer :hp_ev
       t.integer :attack_iv

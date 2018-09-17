@@ -1,8 +1,16 @@
 {
   "Pound":
   {
+    "type": "normal",
     "pp": 35,
     "accuracy": 100,
-    "actions": [{"attack_move": {"power": 40}}]
+    "actions": [{"attack": {"power": 40}}]
+  },
+  "Water Gun":
+  {
+    "type": "water",
+    "pp": 25,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 40}}]
   }
 }
