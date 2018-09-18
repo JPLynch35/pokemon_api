@@ -67,37 +67,20 @@ class PlayerChannel < ApplicationCable::Channel
 
   def send_roster(data)
     game = Game.where('player_one_uuid=? OR player_two_uuid=?', uuid, uuid).first
-    roster = nil
-    other_roster = nil
-    other_uuid = nil
-    if uuid == game.player_one_uuid
-      roster = "roster_one"
-      other_roster = "roster_two"
-      other_uuid = game.player_two_uuid
-    elsif uuid == game.player_two_uuid
-      roster = "roster_two"
-      other_roster = "roster_one"
-      other_uuid = game.player_one_uuid
-    end
+    labels = RosterAdd.roster_labels(game, uuid)
     state = JSON.parse(game.game_states.last.data)
-    if state[roster].nil?
-      roster_add = RosterAdd.new(game, {roster: roster, data: data})
+    if state[labels[:roster]].nil?
+      roster_add = RosterAdd.new(game, {roster: labels[:roster], data: data})
       roster_add.add
       state = JSON.parse(game.game_states.last.data)
-      message = {}
-      if state[other_roster].nil?
+      if state[labels[:other_roster]].nil?
         ActionCable.server.broadcast "player_#{uuid}", {message: "Waiting for opponent to start game..."}
         service = DataFormatService.new
-        game.game_states.create(data: {roster => service.roster_state(roster_add.starting_roster)}.to_json)
+        game.game_states.create(data: {labels[:roster] => service.roster_state(roster_add.starting_roster)}.to_json)
       else
-        roster_one = Roster.from_data(game.roster_one_base)
-        roster_two = Roster.from_data(game.roster_two_base)
-        service = DataFormatService.from_rosters(roster_one, roster_two)
-        game.game_states.create(data: service.state_json)
-        player_one_args = service.arguments("one", game.player_one_uuid)
-        player_two_args = service.arguments("two", game.player_two_uuid)
-        ActionCable.server.broadcast player_one_args[0], player_one_args[1]
-        ActionCable.server.broadcast player_two_args[0], player_two_args[1]
+        arguments = roster_add.initial_data
+        ActionCable.server.broadcast arguments[:player_one_args][0], arguments[:player_one_args][1]
+        ActionCable.server.broadcast arguments[:player_two_args][0], arguments[:player_two_args][1]
       end
     end
     game.save!
@@ -110,43 +93,8 @@ class PlayerChannel < ApplicationCable::Channel
         error: "There is no game to send a move to. It is possible that you or your partner accidentally disconnectes"
       }
     else
-      player = ""
-      opponent = ""
-      if uuid == game.player_one_uuid
-        player = {"player_one" => game.player_one_uuid}
-        opponent = {"player_two" => game.player_two_uuid}
-      elsif uuid == game.player_two_uuid
-        player = {"player_two" => game.player_two_uuid}
-        opponent = {"player_one" => game.player_two_uuid}
-      end
-      validation_service = MoveValidationService.new(game, data, uuid)
-      validation_service.check
-      if validation_service.valid
-        state = JSON.parse(game.game_states.last.data)
-        state["#{player.keys.first}_move"] = data["move"]
-        last_state = game.game_states.last
-        last_state.data = state.to_json
-        last_state.save!
-        if state["#{opponent.keys.first}_move"]
-          processor = TurnProcessor.new(game)
-          processor.run!
-          format_service = DataFormatService.new(processor)
-          game.game_states.create(data: format_service.state_json)
-          player_one_args = format_service.arguments("one", game.player_one_uuid)
-          player_two_args = format_service.arguments("two", game.player_two_uuid)
-          ActionCable.server.broadcast player_one_args[0], player_one_args[1]
-          ActionCable.server.broadcast player_two_args[0], player_two_args[1]
-        else
-          ActionCable.server.broadcast "player_#{uuid}", {
-            message: "Waiting for opponent..."
-          }
-        end
-        game.save!
-      else
-        ActionCable.server.broadcast "player_#{uuid}", {
-          error: validation_service.message
-        }
-      end
+      broadcast_data = TurnService.new(game, data, uuid).process
+      broadcast_data.each {|message| ActionCable.server.broadcast message[0], message[1]}
     end
   end
 end

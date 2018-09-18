@@ -54,4 +54,30 @@ class RosterAdd
   def starting_roster
     Roster.from_data(@base)
   end
+
+  def self.roster_labels(game, uuid)
+    roster = nil
+    other_roster = nil
+    other_uuid = nil
+    if uuid == game.player_one_uuid
+      roster = "roster_one"
+      other_roster = "roster_two"
+      other_uuid = game.player_two_uuid
+    elsif uuid == game.player_two_uuid
+      roster = "roster_two"
+      other_roster = "roster_one"
+      other_uuid = game.player_one_uuid
+    end
+    {roster: roster, other_roster: other_roster, other_uuid: other_uuid}
+  end
+
+  def initial_data
+    roster_one = Roster.from_data(@game.roster_one_base)
+    roster_two = Roster.from_data(@game.roster_two_base)
+    service = DataFormatService.from_rosters(roster_one, roster_two)
+    @game.game_states.create(data: service.state_json)
+    player_one_args = service.arguments("one", @game.player_one_uuid)
+    player_two_args = service.arguments("two", @game.player_two_uuid)
+    {player_one_args: player_one_args, player_two_args: player_two_args}
+  end
 end
