@@ -403,7 +403,12 @@
     "base_attack": 30,
     "base_defense": 35,
     "base_special": 20,
-    "base_speed": 45
+    "base_speed": 45,
+    "moves":
+    {
+      "Tackle": 1,
+      "String Shot": 1
+    }
   },
   "Metapod":
   {
@@ -413,7 +418,13 @@
     "base_attack": 20,
     "base_defense": 55,
     "base_special": 25,
-    "base_speed": 30
+    "base_speed": 30,
+    "moves":
+    {
+      "Harden": 1,
+      "String Shot": "prior",
+      "Tackle": "prior"
+    }
   },
   "Butterfree":
   {
@@ -423,7 +434,42 @@
     "base_attack": 45,
     "base_defense": 50,
     "base_special": 80,
-    "base_speed": 70
+    "base_speed": 70,
+    "moves":
+    {
+      "Confusion": 1,
+      "Confusion": 12,
+      "PoisonPowder": 15,
+      "Stun Spore": 16,
+      "Sleep Powder": 17,
+      "Supersonic": 21,
+      "Whirlwind": 26,
+      "Gust": "Yellow only",
+      "Psybeam": 32,
+      "Razor Wind": "TM",
+      "Whilrwind": "TM",
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Hyper Beam": "TM",
+      "Rage": "TM",
+      "Mega Drain": "TM",
+      "SolarBeam": "TM",
+      "Psychic": "TM",
+      "Teleport": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Rest": "TM",
+      "Psywave": "TM",
+      "Substitute": "TM",
+      "Flash": "HM",
+      "Tackle": "prior",
+      "String Shot": "prior",
+      "Harden": "prior"
+    }
   },
   "Weedle":
   {
@@ -433,7 +479,12 @@
     "base_attack": 35,
     "base_defense": 30,
     "base_special": 20,
-    "base_speed": 50
+    "base_speed": 50,
+    "moves":
+    {
+      "Poison Sting": 1,
+      "String Shot": 1
+    }
   },
   "Kakuna":
   {
@@ -443,7 +494,13 @@
     "base_attack": 25,
     "base_defense": 50,
     "base_special": 25,
-    "base_speed": 35
+    "base_speed": 35,
+    "moves":
+    {
+      "Harden": 1,
+      "Poison Sting": "prior",
+      "String Shot": "prior"
+    }
   },
   "Beedrill":
   {
@@ -453,7 +510,33 @@
     "base_attack": 80,
     "base_defense": 40,
     "base_special": 45,
-    "base_speed": 75
+    "base_speed": 75,
+    "moves":
+    {
+      "Fury Attack": 1,
+      "Fury Attack": 12,
+      "Focus Energy": 16,
+      "Twineedle": 20,
+      "Rage": 25,
+      "Pin Missle": 30,
+      "Agility": 35,
+      "Swords Dance": "TM",
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Hyper Beam": "TM",
+      "Rage": "TM",
+      "Mega Drain": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Cut": "HM"
+    }
   },
   "Pidgey":
   {
@@ -463,7 +546,32 @@
     "base_attack": 45,
     "base_defense": 40,
     "base_special": 35,
-    "base_speed": 56
+    "base_speed": 56,
+    "moves":
+    {
+      "Gust": 1,
+      "Sand-Attack": 5,
+      "Quick Attack": 12,
+      "Whirlwind": 19,
+      "Wing Attack": 28,
+      "Agility": 36,
+      "Mirror Move": 44,
+      "Razor Wind": "TM",
+      "Whirlwind": "TM",
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Sky Attack": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Fly": "HM"
+    }
   },
   "Pidgeotto":
   {
@@ -473,7 +581,33 @@
     "base_attack": 60,
     "base_defense": 55,
     "base_special": 50,
-    "base_speed": 71
+    "base_speed": 71,
+    "moves":
+    {
+      "Gust": 1,
+      "Sand-Attack": 1,
+      "Sand-Attack": 5,
+      "Quick Attack": 12,
+      "Whirlwind": 21,
+      "Wing Attack": 31,
+      "Agility": 40,
+      "Mirror Move": 49,
+      "Razor Wind": "TM",
+      "Whirlwind": "TM",
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Sky Attack": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Fly": "HM"
+    }
   },
   "Pidgeot":
   {
@@ -483,7 +617,34 @@
     "base_attack": 80,
     "base_defense": 75,
     "base_special": 70,
-    "base_speed": 91
+    "base_speed": 91,
+    "moves":
+    {
+      "Gust": 1,
+      "Sand-Attack": 1,
+      "Quick Attack": 1,
+      "Sand-Attack": 5,
+      "Quick Attack": 12,
+      "Whirlwind": 21,
+      "Wing Attack": 31,
+      "Agility": 44,
+      "Mirror Move": 54,
+      "Razor Wind": "TM",
+      "Whirlwind": "TM",
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Sky Attack": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Fly": "HM"
+    }
   },
   "Rattata":
   {
@@ -493,7 +654,34 @@
     "base_attack": 56,
     "base_defense": 35,
     "base_special": 25,
-    "base_speed": 72
+    "base_speed": 72,
+    "moves":
+    {
+      "Tackle": 1,
+      "Tail Whip": 1,
+      "Quick Attack": 7,
+      "Hyper Fang": 14,
+      "Focus Energy": 23,
+      "Super Fang": 34,
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "BubbleBeam": "TM",
+      "Water Gun": "TM",
+      "Blizzard": "TM",
+      "Rage": "TM",
+      "Thunderbolt": "TM",
+      "Thunder": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM"
+    }
   },
   "Raticate":
   {
@@ -503,7 +691,37 @@
     "base_attack": 81,
     "base_defense": 60,
     "base_special": 50,
-    "base_speed": 97
+    "base_speed": 97,
+    "moves":
+    {
+      "Tackle": 1,
+      "Tail Whip": 1,
+      "Quick Attack": 1,
+      "Quick Attack": 7,
+      "Hyper Fang": 14,
+      "Focus Energy": 27,
+      "Super Fang": 41,
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "BubbleBeam": "TM",
+      "Water Gun": "TM",
+      "Ice Beam": "TM",
+      "Blizzard": "TM",
+      "Hyper Beam": "TM",
+      "Rage": "TM",
+      "Thunderbolt": "TM",
+      "Thunder": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM"
+    }
   },
   "Spearow":
   {
@@ -513,7 +731,31 @@
     "base_attack": 60,
     "base_defense": 30,
     "base_special": 31,
-    "base_speed": 70
+    "base_speed": 70,
+    "moves":
+    {
+      "Peck": 1,
+      "Growl": 1,
+      "Leer": 9,
+      "Fury Attack": 15,
+      "Mirror Move": 22,
+      "Drill Peck": 29,
+      "Agility": 36,
+      "Razor Wind": "TM",
+      "Whirlwind": "TM",
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Sky Attack": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Fly": "HM"
+    }
   },
   "Fearow":
   {
@@ -523,7 +765,32 @@
     "base_attack": 90,
     "base_defense": 65,
     "base_special": 61,
-    "base_speed": 100
+    "base_speed": 100,
+    "moves":
+    {
+      "Peck": 1,
+      "Growl": 1,
+      "Leer": 1,
+      "Leer": 9,
+      "Fury Attack": 15,
+      "Mirror Move": 25,
+      "Drill Peck": 34,
+      "Agility": 43,
+      "Razor Wind": "TM",
+      "Whirlwind": "TM",
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Bide": "TM",
+      "Swift": "TM",
+      "Sky Attack": "TM",
+      "Rest": "TM",
+      "Substitute": "TM",
+      "Fly": "HM"
+    }
   },
   "Ekans":
   {
@@ -533,7 +800,34 @@
     "base_attack": 60,
     "base_defense": 44,
     "base_special": 40,
-    "base_speed": 55
+    "base_speed": 55,
+    "moves":
+    {
+      "Wrap": 1,
+      "Leer": 1,
+      "Poison Sting": 10,
+      "Bite": 17,
+      "Glare": 24,
+      "Screech": 31,
+      "Acid": 38,
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mega Drain": "TM",
+      "Earthquake": "TM",
+      "Fissure": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Bide": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Rock Slide": "TM",
+      "Substitute": "TM",
+      "Strength": "HM"
+    }
   },
   "Arbok":
   {
@@ -543,7 +837,36 @@
     "base_attack": 85,
     "base_defense": 69,
     "base_special": 65,
-    "base_speed": 80
+    "base_speed": 80,
+    "moves":
+    {
+      "Wrap": 1,
+      "Leer": 1,
+      "Poison Sting": 1,
+      "Poison Sting": 10,
+      "Bite": 17,
+      "Glare": 27,
+      "Screech": 36,
+      "Acid": 47,
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Hyper Beam": "TM",
+      "Rage": "TM",
+      "Mega Drain": "TM",
+      "Earthquake": "TM",
+      "Fissure": "TM",
+      "Dig": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Bide": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Rock Slide": "TM",
+      "Substitute": "TM",
+      "Strength": "HM"
+    }
   },
   "Pikachu":
   {
@@ -593,7 +916,33 @@
     "base_attack": 47,
     "base_defense": 52,
     "base_special": 40,
-    "base_speed": 41
+    "base_speed": 41,
+    "moves":
+    {
+      "Growl": 1,
+      "Tackle": 1,
+      "Scratch": 8,
+      "Poison Sting": 14,
+      "Tail Whip": 21,
+      "Bite": 29,
+      "Fury Swipes": 36,
+      "Double Kick": 43,
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Blizzard": "TM",
+      "Rage": "TM",
+      "Thunderbolt": "TM",
+      "Thunder": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM"
+    }
   },
   "Nidorina":
   {
@@ -653,7 +1002,51 @@
     "base_attack": 45,
     "base_defense": 48,
     "base_special": 60,
-    "base_speed": 35
+    "base_speed": 35,
+    "moves":
+    {
+      "Pound": 1,
+      "Growl": 1,
+      "Sing": 13,
+      "DoubleSlap": 18,
+      "Minimize": 24,
+      "Metronome": 31,
+      "Defense Curl": 39,
+      "Light Screen": 48,
+      "Mega Punch": "TM",
+      "Mega Kick": "TM",
+      "Toxic": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "BubbleBeam": "TM",
+      "Water Gun": "TM",
+      "Ice Beam": "TM",
+      "Blizzard": "TM",
+      "Submission": "TM",
+      "Counter": "TM",
+      "Seismic Toss": "TM",
+      "Rage": "TM",
+      "SolarBeam": "TM",
+      "Thunderbolt": "TM",
+      "Thunder": "TM",
+      "Psychic": "TM",
+      "Teleport": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Metronome": "TM",
+      "Fire Blast": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Thunder Wave": "TM",
+      "Psywave": "TM",
+      "Tri Attack": "TM",
+      "Substitute": "TM",
+      "Strength": "HM",
+      "Flash": "HM"
+    }
   },
   "Clefable":
   {
@@ -1073,7 +1466,32 @@
     "base_attack": 85,
     "base_defense": 55,
     "base_special": 65,
-    "base_speed": 90
+    "base_speed": 90,
+    "moves":
+    {
+      "Ember": 1,
+      "Tail Whip": 30,
+      "Stomp": 32,
+      "Growl": 35,
+      "Fire Spin": 39,
+      "Take Down": 43,
+      "Agility": 48,
+      "Toxic": "TM",
+      "Horn Drill": "TM",
+      "Body Slam": "TM",
+      "Take Down": "TM",
+      "Double-Edge": "TM",
+      "Rage": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Fire Blast": "TM",
+      "Swift": "TM",
+      "Skull Bash": "TM",
+      "Rest": "TM",
+      "Substitute": "TM"
+    }
   },
   "Rapidash":
   {
@@ -1303,7 +1721,34 @@
     "base_attack": 30,
     "base_defense": 50,
     "base_special": 55,
-    "base_speed": 100
+    "base_speed": 100,
+    "moves":
+    {
+      "Tackle": 1,
+      "Screech": 1,
+      "SonicBoom": 17,
+      "Selfdestruct": 22,
+      "Light Screen": 29,
+      "Swift": 36,
+      "Explosion": 43,
+      "Toxic": "TM",
+      "Take Down": "TM",
+      "Rage": "TM",
+      "Thunderbolt": "TM",
+      "Thunder": "TM",
+      "Teleport": "TM",
+      "Mimic": "TM",
+      "Double Team": "TM",
+      "Reflect": "TM",
+      "Bide": "TM",
+      "Selfdestruct": "TM",
+      "Swift": "TM",
+      "Rest": "TM",
+      "Thunder Wave": "TM",
+      "Explosion": "TM",
+      "Substitute": "TM",
+      "Flash": "HM"
+    }
   },
   "Electrode":
   {

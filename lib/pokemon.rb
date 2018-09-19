@@ -5,7 +5,7 @@ require './lib/move'
 class Pokemon
   #attr_reader for calculating crits
   attr_reader :speed_values, :type_1, :type_2, :level, :name, :move_one, :move_two, :move_three, :move_four
-  attr_accessor :current_hp
+  attr_accessor :current_hp, :status_conditions
 
   def initialize(name, level, hp_values, attack_values, defense_values, special_values, speed_values, move_one, move_two, move_three, move_four, type_1, type_2 = nil)
     @name = name
@@ -22,6 +22,7 @@ class Pokemon
     @move_two = move_two
     @move_three = move_three
     @move_four = move_four
+    @status_conditions = []
   end
 
   def self.from_data(pokemon_base, current_values = nil)
@@ -46,6 +47,7 @@ class Pokemon
       pokemon.move_two.current_pp = current_values["move_two"]["current_pp"]
       pokemon.move_three.current_pp = current_values["move_three"]["current_pp"]
       pokemon.move_four.current_pp = current_values["move_four"]["current_pp"]
+      pokemon.status_conditions = current_values["status_conditions"]
     end
     pokemon
   end
@@ -64,7 +66,8 @@ class Pokemon
       move_one: @move_one.to_h,
       move_two: @move_two.to_h,
       move_three: @move_three.to_h,
-      move_four: @move_four.to_h
+      move_four: @move_four.to_h,
+      status_conditions: @status_conditions
     }
   end
 
@@ -94,6 +97,7 @@ class Pokemon
   end
 
   def attack
+    return (stat_calculation(@attack_values) / 2) if @status_conditions.include?("burn")
     stat_calculation(@attack_values)
   end
 
@@ -106,6 +110,7 @@ class Pokemon
   end
 
   def speed
+    return (stat_calculation(@speed_values) * 0.75) if @status_conditions.include?("paralyze")
     stat_calculation(@speed_values)
   end
 

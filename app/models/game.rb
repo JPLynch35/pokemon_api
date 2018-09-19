@@ -1,7 +1,7 @@
 class Game < ApplicationRecord
   has_secure_token
   has_many :game_states
-  enum status: { active: 0, ended: 1 }
+  enum current_state: { active: 0, ended: 1 }
 
   def roster_one_base
     RosterBase.find(roster_one_base_id)

@@ -6,11 +6,438 @@
     "accuracy": 100,
     "actions": [{"attack": {"power": 40}}]
   },
+  "DoubleSlap":
+  {
+    "type": "normal",
+    "pp": 10,
+    "accuracy": 85,
+    "actions": [{"multi_hit": {"power": 15}}]
+  },
+  "Comet Punch":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 85,
+    "actions": [{"multi_hit": {"power": 18}}]
+  },
+  "Mega Punch":
+  {
+    "type": "normal",
+    "pp": 20,
+    "accuracy": 85,
+    "actions": [{"attack": {"power": 80}}]
+  },
+  "Pay Day":
+  {
+    "type": "normal",
+    "pp": 20,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 40}}]
+  },
+  "Fire Punch":
+  {
+    "type": "fire",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 75}}, {"status": {"status": "burn", "percentage": 10, "target": "defender"}}]
+  },
+  "Ice Punch":
+  {
+    "type": "ice",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 75}}, {"status": {"status": "freeze", "percentage": 10, "target": "defender"}}]
+  },
+  "ThunderPunch":
+  {
+    "type": "electric",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 75}}, {"status": {"status": "paralyze", "percentage": 10, "target": "defender"}}]
+  },
+  "Scratch":
+  {
+    "type": "normal",
+    "pp": 35,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 40}}]
+  },
+  "ViceGrip":
+  {
+    "type": "normal",
+    "pp": 30,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 55}}]
+  },
+  "Cut":
+  {
+    "type": "normal",
+    "pp": 30,
+    "accuracy": 95,
+    "actions": [{"attack": {"power": 50}}]
+  },
+  "Gust":
+  {
+    "type": "normal",
+    "pp": 35,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 40}}]
+  },
+  "Wing Attack":
+  {
+    "type": "flying",
+    "pp": 35,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 40}}]
+  },
+  "Slam":
+  {
+    "type": "normal",
+    "pp": 20,
+    "accuracy": 75,
+    "actions": [{"attack": {"power": 80}}]
+  },
+  "Vine Whip":
+  {
+    "type": "grass",
+    "pp": 10,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 45}}]
+  },
+  "Stomp":
+  {
+    "type": "normal",
+    "pp": 20,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 65}}, {"status": {"status": "flinch", "percentage": 30, "target": "defender"}}]
+  },
+  "Double Kick":
+  {
+    "type": "fighting",
+    "pp": 30,
+    "accuracy": 100,
+    "actions": [{"double_hit": {"power": 30}}]
+  },
+  "Mega Kick":
+  {
+    "type": "normal",
+    "pp": 5,
+    "accuracy": 75,
+    "actions": [{"attack": {"power": 120}}]
+  },
+  "Headbutt":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 70}}, {"status": {"status": "flinch", "percentage": 30, "target": "defender"}}]
+  },
+  "Horn Attack":
+  {
+    "type": "normal",
+    "pp": 25,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 65}}]
+  },
+  "Rolling Kick":
+  {
+    "type": "fighting",
+    "pp": 15,
+    "accuracy": 85,
+    "actions": [{"attack": {"power": 65}}, {"status": {"status": "flinch", "percentage": 30, "target": "defender"}}]
+  },
+  "Tackle":
+  {
+    "type": "normal",
+    "pp": 35,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 35}}]
+  },
+  "Body Slam":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 85}}, {"status": {"status": "paralyze", "percentage": 10, "target": "defender"}}]
+  },
+  "Poison Sting":
+  {
+    "type": "poison",
+    "pp": 35,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 85}}, {"status": {"status": "poison", "percentage": 20, "target": "defender"}}]
+  },
+  "Twineedle":
+  {
+    "type": "bug",
+    "pp": 20,
+    "accuracy": 100,
+    "actions": [{"double_hit": {"power": 25}}, {"status": {"status": "poison", "percentage": 20, "target": "defender"}}]
+  },
+  "Pin Missle":
+  {
+    "type": "bug",
+    "pp": 20,
+    "accuracy": 85,
+    "actions": [{"multi_hit": {"power": 14}}, {"status": {"status": "poison", "percentage": 20, "target": "defender"}}]
+  },
+  "Bite":
+  {
+    "type": "normal",
+    "pp": 25,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 60}}, {"status": {"status": "flinch", "percentage": 10, "target": "defender"}}]
+  },
+  "SonicBoom":
+  {
+    "type": "normal",
+    "pp": 20,
+    "accuracy": 90,
+    "actions": [{"fixed_damage": {"damage": 20}}]
+  },
+  "Peck":
+  {
+    "type": "flying",
+    "pp": 35,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 35}}]
+  },
+  "Drill Peck":
+  {
+    "type": "flying",
+    "pp": 20,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 80}}]
+  },
+  "Low Kick":
+  {
+    "type": "fighting",
+    "pp": 20,
+    "accuracy": 90,
+    "actions": [{"attack": {"power": 50}}, {"status": {"status": "flinch", "percentage": 30, "target": "defender"}}]
+  },
+  "Strength":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 80}}]
+  },
+  "PoisonPowder":
+  {
+    "type": "poison",
+    "pp": 35,
+    "accuracy": 75,
+    "actions": [{"status": {"status": "paralyze", "target": "defender"}}]
+  },
+  "Stun Spore":
+  {
+    "type": "poison",
+    "pp": 30,
+    "accuracy": 75,
+    "actions": [{"status": {"status": "poison", "target": "defender"}}]
+  },
+  "Dragon Rage":
+  {
+    "type": "dragon",
+    "pp": 10,
+    "accuracy": 100,
+    "actions": [{"fixed_damage": {"damage": 40}}]
+  },
+  "ThunderShock":
+  {
+    "type": "electric",
+    "pp": 30,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 40}}, {"status": {"status": "paralyze", "percentage": 10, "target": "defender"}}]
+  },
+  "Thunderbolt":
+  {
+    "type": "electric",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 90}}, {"status": {"status": "paralyze", "percentage": 10, "target": "defender"}}]
+  },
+  "Thunder Wave":
+  {
+    "type": "electric",
+    "pp": 20,
+    "accuracy": 100,
+    "actions": [{"status": {"status": "paralyze", "target": "defender"}}]
+  },
+  "Thunder":
+  {
+    "type": "electric",
+    "pp": 10,
+    "accuracy": 70,
+    "actions": [{"attack": {"power": 120}}, {"status": {"status": "paralyze", "percentage": 10, "target": "defender"}}]
+  },
+  "Rock Throw":
+  {
+    "type": "rock",
+    "pp": 15,
+    "accuracy": 65,
+    "actions": [{"attack": {"power": 50}}]
+  },
+  "Earthquake":
+  {
+    "type": "ground",
+    "pp": 10,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 100}}]
+  },
+  "Egg Bomb":
+  {
+    "type": "ground",
+    "pp": 10,
+    "accuracy": 75,
+    "actions": [{"attack": {"power": 100}}]
+  },
+  "Lick":
+  {
+    "type": "ghost",
+    "pp": 30,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 20}}, {"status": {"status": "paralyze", "percentage": 30, "target": "defender"}}]
+  },
+  "Smog":
+  {
+    "type": "poison",
+    "pp": 20,
+    "accuracy": 70,
+    "actions": [{"attack": {"power": 20}}, {"status": {"status": "poison", "percentage": 40, "target": "defender"}}]
+  },
+  "Sludge":
+  {
+    "type": "poison",
+    "pp": 20,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 65}}, {"status": {"status": "poison", "percentage": 40, "target": "defender"}}]
+  },
+  "Bone Club":
+  {
+    "type": "ground",
+    "pp": 20,
+    "accuracy": 85,
+    "actions": [{"attack": {"power": 65}}, {"status": {"status": "flinch", "percentage": 10, "target": "defender"}}]
+  },
+  "Fire Blast":
+  {
+    "type": "fire",
+    "pp": 5,
+    "accuracy": 85,
+    "actions": [{"attack": {"power": 120}}, {"status": {"status": "burn", "percentage": 30, "target": "defender"}}]
+  },
+  "Waterfall":
+  {
+    "type": "water",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 80}}]
+  },
+  "Swift":
+  {
+    "type": "normal",
+    "pp": 20,
+    "accuracy": 0,
+    "actions": [{"attack": {"power": 60}}]
+  },
+  "Spike Cannon":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"multi_hit": {"power": 20}}]
+  },
+  "Glare":
+  {
+    "type": "normal",
+    "pp": 30,
+    "accuracy": 75,
+    "actions": [{"status": {"status": "paralyze", "target": "defender"}}]
+  },
+  "Poison Gas":
+  {
+    "type": "poison",
+    "pp": 40,
+    "accuracy": 55,
+    "actions": [{"status": {"status": "poison", "target": "defender"}}]
+  },
+  "Barrage":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 85,
+    "actions": [{"multi_hit": {"power": 20}}]
+  },
+  "Dizzy Punch":
+  {
+    "type": "normal",
+    "pp": 10,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 70}}]
+  },
+  "Splash":
+  {
+    "type": "normal",
+    "pp": 40,
+    "accuracy": 0,
+    "actions": [{"no_effect": {}}]
+  },
+  "Fury Swipes":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 80,
+    "actions": [{"multi_hit": {"power": 18}}]
+  },
+  "Bonemerang":
+  {
+    "type": "ground",
+    "pp": 10,
+    "accuracy": 90,
+    "actions": [{"double_hit": {"power": 50}}]
+  },
+  "Rock Slide":
+  {
+    "type": "rock",
+    "pp": 10,
+    "accuracy": 90,
+    "actions": [{"attack": {"power": 75}}]
+  },
+  "Hyper Fang":
+  {
+    "type": "normal",
+    "pp": 15,
+    "accuracy": 90,
+    "actions": [{"attack": {"power": 80}}, {"status": {"status": "flinch", "percentage": 10, "target": "defender"}}]
+  },
+  "Flamethrower":
+  {
+    "type": "fire",
+    "pp": 15,
+    "accuracy": 100,
+    "actions": [{"attack": {"power": 90}}, {"status": {"status": "burn", "percentage": 10, "target": "defender"}}]
+  },
   "Water Gun":
   {
     "type": "water",
     "pp": 25,
     "accuracy": 100,
     "actions": [{"attack": {"power": 40}}]
+  },
+  "Blizzard":
+  {
+    "type": "ice",
+    "pp": 5,
+    "accuracy": 90,
+    "actions": [{"attack": {"power": 120}}, {"status": {"status": "freeze", "percentage": 10, "target": "defender"}}]
+  },
+  "Stun Spore":
+  {
+    "type": "grass",
+    "pp": 30,
+    "accuracy": 75,
+    "actions": [{"status": {"status": "paralyze", "target": "defender"}}]
   }
 }

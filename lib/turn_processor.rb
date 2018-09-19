@@ -1,10 +1,12 @@
 require './lib/roster'
 require './lib/damage'
 require './lib/move_effects'
+require './lib/status'
 require 'json'
 
 class TurnProcessor
   attr_reader :roster_one, :roster_two, :events
+  include Status
   def initialize(game)
     @state = JSON.parse(game.game_states.last.data)
     @roster_one = Roster.from_data(game.roster_one_base, @state["roster_one"])
@@ -17,7 +19,13 @@ class TurnProcessor
   def run!
     switch
     ordered_rosters = speed_check
-    ordered_rosters.each {|roster| take_turn(roster[:roster], roster[:opponent], roster[:move])} if ordered_rosters
+    if ordered_rosters
+      ordered_rosters.each do |roster|
+        take_turn(roster[:roster], roster[:opponent], roster[:move])
+        return nil if roster[:roster].active_pokemon.dead? || roster[:opponent].active_pokemon.dead?
+      end
+      [@roster_one, @roster_two].each {|roster| roster.active_pokemon.status_conditions.delete("flinch") if roster.active_pokemon.status_conditions.include?("flinch")}
+    end
   end
 
   def switch
@@ -63,13 +71,18 @@ class TurnProcessor
   end
 
   def take_turn(attacker, defender, move)
-    @events.push({attacker => {"move" => move.name}})
-    if accuracy_check(attacker, defender, move)
-      effects = MoveEffects.new(attacker, defender, move)
-      effects.run!
-      @events += effects.events
-    else
-      @events.push({attacker => "miss"})
+    unless pre_status_check(attacker)
+      @events.push({attacker => {"move" => move.name}})
+      if accuracy_check(attacker, defender, move)
+        effects = MoveEffects.new(attacker, defender, move)
+        effects.run!
+        @events += effects.events
+      else
+        @events.push({attacker => "miss"})
+      end
     end
+    post_status_check(attacker)
+    @events.push({attacker => "death"}) if attacker.active_pokemon.dead?
+    @events.push({defender => "death"}) if defender.active_pokemon.dead?
   end
 end

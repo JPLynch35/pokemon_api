@@ -7,17 +7,6 @@ class PlayerChannel < ApplicationCable::Channel
     stream_from "player_#{uuid}"
   end
 
-  def receive(data)
-    roster = RosterBase.find_by(name: data["add_pokemon"]["roster_name"])
-    if data["add_pokemon"]
-      pokemon_params = data.slice(:species_name, :attack_iv, :attack_ev, :defense_iv, :defense_ev, :special_iv, :special_ev, :speed_iv, :speed_ev)
-      roster.pokemon_bases.create(pokemon_params)
-      ActionCable.server.broadcast "player_#{uuid}", {
-        message: "Roster Count: #{roster.pokemon_bases.count}"
-      }
-    end
-  end
-
   def get_pokemon_data
     file = File.read('./data/pokemon.json')
     data_hash = JSON.parse(file)
@@ -52,14 +41,7 @@ class PlayerChannel < ApplicationCable::Channel
 
   def send_message(data)
     game = Game.where('player_one_uuid=? OR player_two_uuid=?', uuid, uuid).first
-    send_to = nil
-    unless game.nil?
-      if uuid == game.player_one_uuid
-        send_to = game.player_two_uuid
-      elsif uuid == game.player_two_uuid
-        send_to = game.player_one_uuid
-      end
-    end
+    send_to = DataFormatService.find_other_uuid(game, uuid)
     ActionCable.server.broadcast "player_#{send_to}", {
       opponent_message: data["message"]
     }

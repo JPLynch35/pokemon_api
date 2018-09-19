@@ -26,7 +26,7 @@ class TurnService
       end
       @game.save!
     else
-      return_value = [["player_#{@uuid}", {error: validation_service.message}]]
+      return_value = [["player_#{@uuid}", {error: @validation_service.message}]]
     end
     return_value
   end
@@ -37,7 +37,8 @@ class TurnService
     processor = TurnProcessor.new(@game)
     processor.run!
     format_service = DataFormatService.new(processor)
-    @game.game_states.create(data: format_service.state_json)
+    @game.game_states.create(data: format_service.state.to_json)
+    @game.current_state = "ended" if format_service.winner
     {player_one_args: format_service.arguments("one", @game.player_one_uuid),
     player_two_args: format_service.arguments("two", @game.player_two_uuid)}
   end
